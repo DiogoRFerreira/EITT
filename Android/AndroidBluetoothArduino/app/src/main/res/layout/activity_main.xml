@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            android:id="@+id/btnConnect"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:textColor="#8ec1cd"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/valueView"
+            android:layout_alignStart="@+id/valueView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Value"
+            android:id="@+id/btnContinue"
+            android:layout_gravity="center_horizontal"
+            android:clickable="false"
+            android:enabled="true"
+            android:textColor="#8ec1cd"
+            android:textSize="60dp"
+            android:background="#ffffff"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_below="@+id/btnConnect"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/valueView"
+            android:textAlignment="center"
+            android:textSize="34dp"
+            android:textStyle="normal"
+            android:typeface="serif"
+            android:visibility="visible"
+            android:textColor="#8ec1cd"
+            android:text="Value"
+            android:background="#ffffff"
+            android:layout_above="@+id/textView"
+            android:layout_alignRight="@+id/valueView2"
+            android:layout_alignEnd="@+id/valueView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Forecast"
+            android:id="@+id/textView"
+            android:textColor="#8ec1cd"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Value"
+            android:id="@+id/valueView2"
+            android:textColor="#8ec1cd"
+            android:textSize="34sp"
+            android:background="#ffffff"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageYescar"
+            android:src="@drawable/yes"
+            android:layout_toLeftOf="@+id/valueView"
+            android:layout_toStartOf="@+id/valueView"
+            android:layout_below="@+id/valueView2"
+            android:focusableInTouchMode="true"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageNocar"
+            android:src="@drawable/no"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/imageYescar"
+            android:layout_toRightOf="@+id/valueView2"
+            android:layout_toEndOf="@+id/valueView2"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/logoresize"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnContinue"
+            android:layout_toEndOf="@+id/btnContinue"
+            android:layout_alignBottom="@+id/btnContinue" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
